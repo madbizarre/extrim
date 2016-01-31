@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <% var title = "Экстрим туры" %>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+          integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ=="
+          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/>
+    <link href="css/style.css" rel="stylesheet"/>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body data-spy="scroll" data-target="#navbar">
+
+<div class="navbar-wrapper">
+    <nav class="navbar nav-tabs navbar-static-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target=".navbar-collapse" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <i class="fa fa-bars fa-2x"></i>
+                </button>
+                <a class="navbar-brand text-capitalize" href="#"><%= title %></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#intro-slider">Домой</a></li>
+                    <li><a href="#1">Путешествие на Северный Тиман</a></li>
+                    <!--<li><a href="#2">Заголовок</a></li>-->
+                    <!--<li><a href="#3">Заголовок</a></li>-->
+                    <!--<li><a href="#4">Заголовок</a></li>-->
+                    <!--<li><a href="#5">Заголовок</a></li>-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Пакеты<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#2">Пакет «ЭКОНОМ»</a></li>
+                            <li><a href="#3">Пакет «СТАНДАРТ»</a></li>
+                            <li><a href="#4">Пакет «ЛАЙТ»</a></li>
+                            <li><a href="#5">Пакет «ТРИ СТИХИИ»</a></li>
+                            <li><a href="#6">Пакет «КОМБО»</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#7">Соревнования на собачьих упряжках</a></li>
+                    <li><a href="#map-section">Как нас найти</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<header id="intro-slider" class="carousel slide intro-slider" data-ride="carousel">
+    <ol class="carousel-indicators">
+        <li data-target="#intro-slider" data-slide-to="0" class="active"></li>
+        <li data-target="#intro-slider" data-slide-to="1"></li>
+        <li data-target="#intro-slider" data-slide-to="2"></li>
+        <li data-target="#intro-slider" data-slide-to="3"></li>
+        <li data-target="#intro-slider" data-slide-to="4"></li>
+        <li data-target="#intro-slider" data-slide-to="5"></li>
+        <li data-target="#intro-slider" data-slide-to="6"></li>
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <img src="img/intro.jpg" alt="КонТурБалт">
+
+            <div class="carousel-caption">
+                <div class="container text-center">
+                    <div class="col-xs-12">
+                        <img src="img/logo.png" alt="Контурбалт" class="logo">
+                    </div>
+                    <h1 class="text-center">«В поисках приключений: "Путешествие на Северный Тиман"»</h1>
+
+                    <button class="btn btn-default-lg" role="button" data-toggle="modal"
+                            data-target="#contactUsModal">Оставить заявку
+                    </button>
+                </div>
+                <div class="button-wrapper-bottom">
+                    <a href="#1" class="btn btn-default-lg btn-transparent" role="button">Узнать подробности
+                        <i class="fa fa-chevron-down"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/intro.jpg" alt="КонТурБалт">
+
+            <div class="carousel-caption">
+                <div class="container text-center">
+                    <div class="col-xs-12">
+                        <img src="img/logo.png" alt="Контурбалт" class="logo">
+                    </div>
+                    <h1 class="text-center">Пакет «ЭКОНОМ»</h1>
+
+                    <button class="btn btn-default-lg" role="button" data-toggle="modal"
+                            data-target="#contactUsModal">Оставить заявку
+                    </button>
+                </div>
+                <div class="button-wrapper-bottom">
+                    <a href="#2" class="btn btn-default-lg btn-transparent" role="button">Узнать подробности
+                        <i class="fa fa-chevron-down"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/intro.jpg" alt="КонТурБалт">
+
+            <div class="carousel-caption">
+                <div class="container text-center">
+                    <div class="col-xs-12">
+                        <img src="img/logo.png" alt="Контурбалт" class="logo">
+                    </div>
+                    <h1 class="text-center">Пакет «СТАНДАРТ»</h1>
+
+                    <button class="btn btn-default-lg" role="button" data-toggle="modal"
+                            data-target="#contactUsModal">Оставить заявку
+                    </button>
+                </div>
+                <div class="button-wrapper-bottom">
+                    <a href="#3" class="btn btn-default-lg btn-transparent" role="button">Узнать подробности
+                        <i class="fa fa-chevron-down"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/intro.jpg" alt="КонТурБалт">
+
+            <div class="carousel-caption">
+                <div class="container text-center">
+                    <div class="col-xs-12">
+                        <img src="img/logo.png" alt="Контурбалт" class="logo">
+                    </div>
+                    <h1 class="text-center">Пакет «ЛАЙТ»</h1>
+
+                    <button class="btn btn-default-lg" role="button" data-toggle="modal"
+                            data-target="#contactUsModal">Оставить заявку
+                    </button>
+                </div>
+                <div class="button-wrapper-bottom">
+                    <a href="#4" class="btn btn-default-lg btn-transparent" role="button">Узнать подробности
+                        <i class="fa fa-chevron-down"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/intro.jpg" alt="КонТурБалт">
+
+            <div class="carousel-caption">
+                <div class="container text-center">
+                    <div class="col-xs-12">
+                        <img src="img/logo.png" alt="Контурбалт" class="logo">
+                    </div>
+                    <h1 class="text-center">Пакет «ТРИ СТИХИИ»</h1>
+
+                    <button class="btn btn-default-lg" role="button" data-toggle="modal"
+                            data-target="#contactUsModal">Оставить заявку
+                    </button>
+                </div>
+                <div class="button-wrapper-bottom">
+                    <a href="#5" class="btn btn-default-lg btn-transparent" role="button">Узнать подробности
+                        <i class="fa fa-chevron-down"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/intro.jpg" alt="КонТурБалт">
+
+            <div class="carousel-caption">
+                <div class="container text-center">
+                    <div class="col-xs-12">
+                        <img src="img/logo.png" alt="Контурбалт" class="logo">
+                    </div>
+                    <h1 class="text-center">Пакет «КОМБО»</h1>
+
+                    <button class="btn btn-default-lg" role="button" data-toggle="modal"
+                            data-target="#contactUsModal">Оставить заявку
+                    </button>
+                </div>
+                <div class="button-wrapper-bottom">
+                    <a href="#6" class="btn btn-default-lg btn-transparent" role="button">Узнать подробности
+                        <i class="fa fa-chevron-down"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="img/intro.jpg" alt="КонТурБалт">
+
+            <div class="carousel-caption">
+                <div class="container text-center">
+                    <div class="col-xs-12">
+                        <img src="img/logo.png" alt="Контурбалт" class="logo">
+                    </div>
+                    <h1 class="text-center">Соревнования на собачьих упряжках</h1>
+
+                    <button class="btn btn-default-lg" role="button" data-toggle="modal"
+                            data-target="#contactUsModal">Оставить заявку
+                    </button>
+                </div>
+                <div class="button-wrapper-bottom">
+                    <a href="#7" class="btn btn-default-lg btn-transparent" role="button">Узнать подробности
+                        <i class="fa fa-chevron-down"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <a class="left carousel-control" href="#intro-slider" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#intro-slider" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+</header>
+
+<main role="main">
+    <section class="white" id="1">
+        <div class="container">
+            <h1 class="text-uppercase text-center">Программа тура «В поисках приключений: "Путешествие на Северный
+                Тиман"»</h1>
+            <hr class="subtitle-divider"/>
+            <p>Тур рассчитан на 8 дней/8 ночей</p>
+            <ul class="list-unstyled common-list">
+                <li>Маршрут 1: Санкт-Петербург-Нарьян-Мар - Пустозерск – Коткино - Северный Тиман - Коткино - Нарьян-Мар
+                    – Санкт-Петербург
+                </li>
+                <li>Маршрут 2: Санкт-Петербург-Нарьян-Мар - Пустозерск - Коткино-Северный Тиман - Нарьян-Мар –
+                    Санкт-Петербург (возможна альтернативного выезда на вертолете «Робинсон»).
+                </li>
+            </ul>
+            <p>Расписание прямых авиарейсов из Санкт-Петербурга:</p>
+            <ul class="list-unstyled common-list">
+                <li>Санкт-Петербург - Нарьян-Мар - Рейс 5N 323 Боинг 737 – вылет в 14:05 прилёт 16:20 время в пути 2 ч.
+                    15 минут
+                </li>
+                <li>Нарьян-Мар – Санкт-Петербург – Рейс 5N 324 Боинг 737 вылет в 17:30 прилёт 19:55 время в пути 2 ч. 25
+                    минут
+                </li>
+                <li>Возможно доставка группы через г. Москва.</li>
+            </ul>
+            <ul class="list-unstyled common-list">
+                <li>Внимание: Стоимость авиаперелёта по направлению Санкт-Петербург-Нарьян-Мар-Санкт-Петербург не входит
+                    в стоимость тура
+                </li>
+                <li>Группа: 3-4 человек.</li>
+                <li>Время посещения: с 22 февраля по 10 апреля 2016 года.</li>
+                <li>Питание: всё включено</li>
+                <li>Специфика тура: зимняя рыбалка, сельский, экстремальный, эколого-просветительский туризм с
+                    посещением паломнических мест.
+                </li>
+                <li>Страховка: включена в стоимость тура. (включается вами)</li>
+            </ul>
+            <div class="row includes">
+                <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6">
+                    <h2>Одежда, входящая в стоимость тура:</h2>
+                    <ul class="list-unstyled okay">
+                        <li>Зимний костюм Norfin для рыбалки</li>
+                        <li>Специальные зимние тёплые ботинки для рыбалки</li>
+                        <li>Зимние перчатки</li>
+                        <li>Балаклава (специальная тканевая шапка для езды на снегоходах) и тёплая шапка</li>
+                        <li>Снегоходные очки</li>
+                    </ul>
+                </div>
+                <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6">
+                    <h2>Индивидуальная одежда:</h2>
+                    <ul class="list-unstyled none">
+                        <li>Термобельё (статическое – тёплое). Самое оптимальный вариант использовать марки Norveg
+                            (Германия) и Guahoo (Финляндия-Китай). У этих производителей есть предложения для любых
+                            ситуаций
+                        </li>
+                        <li>Теплые носки. Помимо обычных носок, при себе лучше всегда иметь 2 пары теплых шерстяных или
+                            охотничьих носков
+                        </li>
+                        <li>Теплые спортивные штаны</li>
+                        <li>Тёплый джемпер или свитер. Лучше брать 2ух слойные флисовые толстовки</li>
+                        <li>Комплекты индивидуального интимного белье</li>
+                        <li>Шапки</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="gray" id="2">
+        <div class="container">
+            <h1 class="text-uppercase text-center">Пакет «ЭКОНОМ»</h1>
+            <hr class="subtitle-divider"/>
+            <p>Описание пакета: пакет подходит для всех категорий отдыхающих, не требует специальных навыков. <br/>
+                Концепцией является, ежедневные проведения новых экстремальных мероприятий активного отдыха, на
+                протяжении всего тура.
+            </p>
+
+            <p>Длительность: 7 дней 6 ночей.</p>
+
+            <p>Размер группы: от 2 до 8 человек</p>
+
+            <p>В стоимость пакета включено:</p>
+            <ul class="list-unstyled common-list">
+                <li>Трансфер аэропорт (г. Симферополь) - гостинца "Аврора" (г. Севастополь) в день прилета и отлета.
+                </li>
+                <li>Трансферы по программе тура: от гостиницы "Аврора" до мест проведения экстремальных мероприятий и
+                    обратно
+                </li>
+                <li>Новая сим-карта (оператор "МТС Краснодар")</li>
+                <li>Проживание в гостинице "Аврора" 6 суток (завтрак включён, бесплатный wi-fi доступ по всей гостинице,
+                    одно-двухместные номера, индивидуальный бойлер в каждом номере, кондиционер, туалет и душ в номере)
+                </li>
+                <li>5 видов экстремального отдыха за один тур по программе:<br/>
+                    (*в зависимости от погодных условий, программа проведения мероприятий может быть изменена)
+                </li>
+            </ul>
+
+            <ul class="common-list list-unstyled">
+                <li>День 1 – Встреча в аэропорту г. Симферополь:</li>
+                <li>
+                    <ul>
+                        <li>Трансфер аэропорт-гостиница «Аврора»</li>
+                        <li>Заселение в гостиницу</li>
+                    </ul>
+                </li>
+                <li>День 2 – Полёт на флайборде:</li>
+                <li>
+                    <ul>
+                        <li>Длительность полета 15 минут</li>
+                        <li>Инструктаж по технике безопасности</li>
+                        <li>К полёту прилагается: гидрокостюм, шлем, спасательный жилет, одноразовое полотенце,
+                            раздевалка, чай и кофе на выбор
+                        </li>
+                        <li>Зона отдыха</li>
+                        <li>Фотоотчет</li>
+                    </ul>
+                </li>
+
+                <li>День 3 - Прогулка на яхте:</li>
+                <li>
+                    <ul>
+                        <li>Длительность мероприятия 4 часа</li>
+                        <li>Инструктаж по технике безопасности</li>
+                        <li>Маршрут: Казачья бухта - Голубая бухта - Мыс фиолент</li>
+                        <li>Рыбалка, мангал, купание в море, маска, ласты, по желанию катание на тросе за парусной
+                            яхтой
+                        </li>
+                    </ul>
+                </li>
+                <li>День 4 - Морской каякинг:</li>
+                <li>
+                    <ul>
+                        <li>Длительность 2-5 часов</li>
+                        <li>Маршрут от 3 до 5 км. выход и возвращение из бухты Балаклавы</li>
+                        <li>Инструкция по технике безопасности</li>
+                        <li>Аренда снаряжения (каяк, весло, юбка, спасательный жилет, гермомешок)</li>
+                    </ul>
+                </li>
+                <li>День 5 - Поездка в горы на квадроциклах:</li>
+                <li>
+                    <ul>
+                        <li>Длительность 1,5-2,5 часа</li>
+                        <li>Маршруты проходят по Ай-Тодорской долине, Чернореченскому каньону, урочищу Гористое</li>
+                        <li>Аренда квадроцикла</li>
+                        <li>Инструкция по технике безопасности</li>
+                    </ul>
+                </li>
+                <li>День 6 - Пеший поход в горы:</li>
+                <li>
+                    <ul>
+                        <li>Длительность похода 4-6 часов</li>
+                        <li>Маршрут от 5 до 8 км. Пещерный город Мангуп-Кале (высота 583 метра) или гора Ильяс-Кая
+                            (высота 681 метр)
+                        </li>
+                    </ul>
+                </li>
+                <li>День 7 – Трансфер в аэропорт г. Симферополь:</li>
+                <li>
+                    <ul>
+                        <li>Выезд из гостиницы</li>
+                        <li>Трансфер гостиница «Аврора»-аэропорт</li>
+                    </ul>
+                </li>
+                <li>Стоимость пакета на человека при размещении: 32 400 рублей/человек</li>
+                <li>Стоимость пакета на пару размещение: 58 200 рублей/за пару</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="white" id="3">
+        <div class="container">
+            <h1 class="text-uppercase text-center">Пакет «СТАНДАРТ»</h1>
+            <hr class="subtitle-divider"/>
+            <p>Тур подходит для всех категорий отдыхающих, не требует специальных навыков.
+                Концепцией является, ежедневные проведения новых экстремальных мероприятий активного отдыха, на
+                протяжении всего тура.</p>
+
+            <p>Длительность: 7 дней 6 ночей.</p>
+
+            <p>Размер группы: от 2 до 8 человек</p>
+
+            <p>В стоимость пакета включено:</p>
+            <ul class="list-unstyled common-list">
+                <li>Трансфер аэропорт (г. Симферополь) - гостинца "Спорт-Отель" (г. Севастополь) в день прилета и
+                    отлета
+                </li>
+                <li>Трансферы по программе тура: от гостиницы " Спорт-Отель" до мест проведения экстремальных
+                    мероприятий и обратно
+                </li>
+                <li>Новая сим-карта (оператор "МТС Краснодар")</li>
+                <li>Проживание в гостинице " Спорт-Отель" 6 суток (завтрак включён, бесплатный wi-fi доступ по всей
+                    гостинице, одно-двухместные номера, кондиционер, туалет и душ в номере)
+                </li>
+                <li>6 видов экстремального отдыха за один тур:<br/>
+                    (*в зависимости от погодных условий, программа проведения мероприятий может быть изменена)
+                </li>
+            </ul>
+            <ul class="list-unstyled common-list">
+                <li>День 1 – Встреча в аэропорту г. Симферополь:</li>
+                <li>
+                    <ul>
+                        <li>Трансфер аэропорт-гостиница «Спорт-Отель»</li>
+                        <li>Заселение в гостиницу</li>
+                        <li>Трансфер до базы флайбординга и обратно</li>
+                        <li>Полёт на флайборде 15 минут</li>
+                        <li>Фотоотчет</li>
+                    </ul>
+                </li>
+                <li>День 2 – Полет на паратрайке:</li>
+                <li>
+                    <ul>
+                        <li>Длительность полета 15-20 минут</li>
+                        <li>Длительность всего мероприятия 4-5 часов</li>
+                        <li>Инструктаж по технике безопасности</li>
+                        <li>Видеоотчет</li>
+                    </ul>
+                </li>
+                <li>День 3 - Морской каякинг:</li>
+                <li>
+                    <ul>
+                        <li>Длительность 2-5 часов</li>
+                        <li>Маршрут от 3 до 5 км. выход и возвращение из бухты Балаклавы</li>
+                        <li>Инструкция по технике безопасности</li>
+                        <li>Аренда снаряжения (каяк, весло, юбка, спасательный жилет,гермомешок)</li>
+                    </ul>
+                </li>
+                <li>День 4 - Дайвинг с выходом в море на катере:</li>
+                <li>
+                    <ul>
+                        <li>Длительность погружения до 30 минут</li>
+                        <li>Глубина погружения 5-6 метров</li>
+                        <li>Длительность всего мероприятия 4-5 часов</li>
+                        <li>Инструктаж по технике безопасности</li>
+                        <li>Полный комплект снаряжения</li>
+                        <li>Индивидуальный инструктор при погружении</li>
+                    </ul>
+                </li>
+                <li>День 5 - Роупджампинг:</li>
+                <li>
+                    <ul>
+                        <li>Один прыжок</li>
+                        <li>Высота прыжков от 40 метров</li>
+                        <li>Длительность всего мероприятия 4-5 часов</li>
+                    </ul>
+                </li>
+                <li>День 6 - Сафари на внедорожниках:</li>
+                <li>
+                    <ul>
+                        <li>Длительность 8 часов</li>
+                        <li>Джипы SUZUKI JIMNY</li>
+                        <li>Маршрут: Балаклава-Южный Форт-Северный Форт-Севастополь</li>
+                        <li>Инструктаж по технике безопасности</li>
+                        <li>Экскурсия по морю на катере</li>
+                    </ul>
+                </li>
+                <li>День 7 – Трансфер в аэропорт г. Симферополь:</li>
+                <li>
+                    <ul>
+                        <li>Выезд из гостиницы</li>
+                        <li>Трансфер гостиница «Спорт-Отель» -аэропорт</li>
+                    </ul>
+                </li>
+                <li>Стоимость пакета на человека при размещении SNGL: 40 500 рублей/человек</li>
+                <li>Стоимость пакета на пару размещение DBL: 35 400 рублей/за пару</li>
+                <li>Стоимость пакета TRPL: 34 700 рублей</li>
+                <li>Стоимость пакета QDPL: 34 700 рублей</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="gray" id="4">
+        <div class="container">
+            <h1 class="text-uppercase text-center">Пакет «ЛАЙТ»</h1>
+            <hr class="subtitle-divider"/>
+            <p>Описание пакета: пакет подходит для всех категорий отдыхающих, не требует специальных навыков.
+                Концепцией является, ежедневные проведения новых экстремальных мероприятий активного отдыха, на
+                протяжении всего тура.</p>
+
+            <p>Размер группы: от 2 до 8 челове</p>
+
+            <p>В стоимость пакета включено:</p>
+            <ul class="list-unstyled common-list">
+                <li>Трансферы по программе тура: от площади Лазарева (г.Севастополь) до мест проведения экстремальных
+                    мероприятий и обратно
+                </li>
+                <li>3 вида экстремального отдыха за один тур:<br/>
+                    (*в зависимости от погодных условий, программа проведения мероприятий может быть изменена)
+                </li>
+            </ul>
+            <ul class="list-unstyled common-list">
+                <li>День 1 – Полёт на флайборде:</li>
+                <li>
+                    <ul>
+                        <li>Длительность полета 15 минут</li>
+                        <li>Инструктаж по технике безопасности</li>
+                        <li>К полёту прилагается: гидрокостюм, шлем, спасательный жилет, одноразовое полотенце,
+                            раздевалка, чай и кофе на выбор
+                        </li>
+                        <li>Зона отдыха</li>
+                        <li>Фотоотчет</li>
+                    </ul>
+                </li>
+                <li>День 2 - Морской каякинг:</li>
+                <li>
+                    <ul>
+                        <li>Длительность 2-5 часов</li>
+                        <li>Маршрут от 3 до 5 км. выход и возвращение из бухты Балаклавы</li>
+                        <li>Инструкция по технике безопасности</li>
+                        <li>Аренда снаряжения (каяк, весло, юбка, спасательный жилет, гермомешок)</li>
+                    </ul>
+                </li>
+                <li>День 3 - Пеший поход в горы:</li>
+                <li>
+                    <ul>
+                        <li>Длительность похода 4-6 часов</li>
+                        <li>Маршрут от 5 до 8 км. Пещерный город Мангуп-Кале (высота 583 метра) или гора Ильяс-Кая
+                            (высота 681 метр)
+                        </li>
+                    </ul>
+                </li>
+                <li>Стоимость пакета на человека: 6 990 рублей/человек</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="white" id="5">
+        <div class="container">
+            <h1 class="text-uppercase text-center">Пакет «ТРИ СТИХИИ»</h1>
+            <hr class="subtitle-divider"/>
+            <p>Описание пакета: пакет подходит для всех категорий отдыхающих, не требует специальных навыков.
+                Концепцией является, ежедневные проведения новых экстремальных мероприятий активного отдыха, на
+                протяжении всего тура.</p>
+
+            <p>Размер группы: от 2 до 8 человек</p>
+
+            <p>В стоимость пакета включено:</p>
+            <ul class="list-unstyled common-list">
+                <li>Трансферы по программе тура: от площади Лазарева (г.Севастополь) до мест проведения экстремальных
+                    мероприятий и обратно
+                </li>
+                <li>3 вида экстремального отдыха за один тур:<br/>
+                    (*в зависимости от погодных условий, программа проведения мероприятий может быть изменена)
+                </li>
+            </ul>
+            <ul class="list-unstyled common-list">
+                <li>День 1 – Полёт на флайборде:</li>
+                <li>
+                    <ul>
+                        <li>Длительность полета 15 минут</li>
+                        <li>Инструктаж по технике безопасности</li>
+                        <li>К полёту прилагается: гидрокостюм, шлем, спасательный жилет, одноразовое полотенце,
+                            раздевалка, чай и кофе на выбор
+                        </li>
+                        <li>Зона отдыха</li>
+                        <li>Фотоотчет</li>
+                    </ul>
+                </li>
+                <li>День 2 – Полет на паратрайке:</li>
+                <li>
+                    <ul>
+                        <li>Длительность полета 15-20 минут</li>
+                        <li>Длительность всего мероприятия 4-5 часов</li>
+                        <li>Инструктаж по технике безопасности</li>
+                        <li>Видеоотчет</li>
+                    </ul>
+                </li>
+                <li>День 3 - Поездка в горы на квадроциклах:</li>
+                <li>
+                    <ul>
+                        <li>Длительность 1,5-2,5 часа</li>
+                        <li>Маршруты проходят по Ай-Тодорской долине, Чернореченскому каньону, урочищу Гористое</li>
+                        <li>Аренда квадроцикла</li>
+                        <li>Инструкция по технике безопасности</li>
+                    </ul>
+                </li>
+                <li>Стоимость пакета на человека: 11 850 рублей/человек</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="gray" id="6">
+        <div class="container">
+            <h1 class="text-uppercase text-center">Пакет «КОМБО»</h1>
+            <hr class="subtitle-divider"/>
+            <p>Описание пакета: пакет подходит для всех категорий отдыхающих, не требует специальных навыков.
+                Концепцией является, ежедневные проведения новых экстремальных мероприятий активного отдыха, на
+                протяжении всего тура.</p>
+
+            <p>Размер группы: от 2 до 8 человек</p>
+
+            <p>В стоимость пакета включено:</p>
+            <ul class="list-unstyled common-list">
+                <li>Трансферы по программе тура: от площади Лазарева (г.Севастополь) до мест проведения экстремальных
+                    мероприятий и обратно
+                </li>
+                <li>4 вида экстремального отдыха за один тур:<br/>
+                    (*в зависимости от погодных условий, программа проведения мероприятий может быть изменена)
+                </li>
+            </ul>
+            <ul class="list-unstyled common-list">
+                <li>День 1 – Полёт на флайборде:</li>
+                <li>
+                    <ul>
+                        <li>Длительность полета 15 минут</li>
+                        <li>Инструктаж по технике безопасности</li>
+                        <li>К полёту прилагается: гидрокостюм, шлем, спасательный жилет, одноразовое полотенце,
+                            раздевалка, чай и кофе на выбор
+                        </li>
+                        <li>Зона отдыха</li>
+                        <li>Фотоотчет</li>
+                    </ul>
+                </li>
+                <li>День 2 - Сафари на внедорожниках:</li>
+                <li>
+                    <ul>
+                        <li>Длительность 8 часов</li>
+                        <li>Джипы SUZUKI JIMNY</li>
+                        <li>Маршрут: Балаклава-Южный Форт-Северный Форт-Севастополь</li>
+                        <li>Инструктаж по технике безопасности</li>
+                        <li>Экскурсия по морю на катере</li>
+                    </ul>
+                </li>
+                <li>День 3 - Дайвинг с выходом в море на катере:</li>
+                <li>
+                    <ul>
+                        <li>Длительность погружения до 30 минут</li>
+                        <li>Глубина погружения 5-6 метров</li>
+                        <li>Длительность всего мероприятия 4-5 часов</li>
+                        <li>Инструктаж по технике безопасности</li>
+                        <li>Полный комплект снаряжения</li>
+                        <li>Индивидуальный инструктор при погружении</li>
+                    </ul>
+                </li>
+                <li>День 4 - Роупджампинг:</li>
+                <li>
+                    <ul>
+                        <li>Один прыжок</li>
+                        <li>Высота прыжков от 40 метров</li>
+                        <li>Длительность всего мероприятия 4-5 часов</li>
+                    </ul>
+                </li>
+                <li>Стоимость пакета на человека: 13 320 рублей/человек</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="white" id="7">
+        <div class="container">
+            <h1 class="text-uppercase text-center">Соревнования на собачьих упряжках</h1>
+            <hr class="subtitle-divider"/>
+            <p>Команда ездового спорта "Арктик Виллидж" приглашает принять участие в профессиональных соревнованиях на
+                собачьих упряжках (спортсменом может стать любой желающий). Участником может быть сотрудник организации
+                или физическое лицо. Рассмотрим любые варианты сотрудничества.</p>
+
+            <h2>Список гонок:</h2>
+            <ul class="common-list list-unstyled">
+                <li><a href="http://gonka-sampo.ru/">«По&nbsp;земле&nbsp;Сампо»&nbsp;2016</a> -
+                    открытый класс мид-упряжка 6 собак три упряжки дистанция 120 км, длительность гонки три дня
+                    г.Петрозаводск
+                </li>
+                <li><a href="http://race.nordhope.info/">«Северная&nbsp;Надежда»&nbsp;2016</a> - открытый класс
+                    мид-упряжка 6 собак три
+                    упряжки дистанция 400 км длительность гонки 7 дней Костромская область
+                </li>
+                <li><a href="http://beringia41.ru/">«Беренгия»&nbsp;2016</a> – открытый класс мид-упряжка 10 собак одна
+                    упряжка дистанция 1000 км длительность гонки
+                    23 дня г. Петропавлск-Камчатский
+                </li>
+            </ul>
+            <p>Стоимость участия – 100 000 рублей в каждой гонке</p>
+
+            <div class="row includes">
+                <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6">
+                    <h2>В стоимость включено:</h2>
+                    <ul class="list-unstyled okay">
+                        <li>аренда собачьей упряжки</li>
+                        <li>подготовка собак на высоком уровне</li>
+                        <li>проезд собак до места проведения гонок</li>
+                        <li>питание собак</li>
+                        <li>ветеринарное обслуживание</li>
+                    </ul>
+                </div>
+
+                <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-6">
+                    <h2>Дополнительные затраты:</h2>
+                    <ul class="list-unstyled none">
+                        <li>проезд от места проживания до места участия</li>
+                        <li>проживание</li>
+                        <li>питание</li>
+                    </ul>
+                </div>
+            </div>
+            <p class="text-center">Охват аудитории на каждых соревнованиях более 20 000 человек.<br/>
+                Наше совместное сотрудничество поможет многим нуждающимся детям.</p>
+        </div>
+    </section>
+
+    <section class="map gray" id="map-section">
+        <div class="col-xs-12" style="height:400px">
+            <div id="map" style="width: 100%; height: 100%;"></div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="footer-wrapper">
+        <div class="container">
+            <ul class="list-inline text-center footer-list">
+                <li class="col-xs-12 col-sm-3">
+                    <span class="fa fa-phone fa-4x"></span>
+                    <address>
+                        <p><strong>Телефон:</strong><br/>
+                            +7 (812) 339-61-19 <br/>
+                            +7 (921) 589-50-21
+                        </p>
+                    </address>
+                </li>
+                <li class="col-xs-12 col-sm-3">
+                    <span class="fa fa-envelope fa-4x"></span>
+                    <address>
+                        <p><strong>Почта:</strong><br/>
+                            tchaykun@konturbalt.ru
+                        </p>
+                    </address>
+                </li>
+                <li class="col-xs-12 col-sm-3">
+                    <span class="fa fa-map-marker fa-4x"></span>
+                    <address>
+                        <p><strong>Наш адрес:</strong><br/>
+                            Санкт-Петербург, В.О. 9-линия 34,<br/>
+                            БЦ «Магнус», офис 201.
+                        </p>
+                    </address>
+                </li>
+                <li class="col-xs-12 col-sm-3">
+                    <ul class="list-inline footer-social-list">
+                        <li>
+                            <a href="https://vk.com/club27476985">
+                                <img src="img/social-icons/vk.png" alt="Вконтакте" height="50"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/groups/350467235023990/">
+                                <img src="img/social-icons/facebook.png" alt="Facebook" height="50"/>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <p class="col-xs-12">© <%= new Date().getFullYear() %> <%= title %></p>
+        </div>
+    </div>
+</footer>
+
+<div class="modal fade" id="contactUsModal" tabindex="-1" role="dialog" aria-labelledby="contactUsModal">
+    <div class="modal-dialog">
+        <div class="modal-content contact">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title text-center contact-title">Оставьте заявку</h4>
+            </div>
+            <div class="modal-body text-center">
+                <form id="contact" action="" method="post">
+                    <fieldset>
+                        <label for="inputName"></label>
+                        <input type="text" id="inputName" placeholder="Имя*" tabindex="1" autofocus required/>
+                    </fieldset>
+                    <fieldset>
+                        <label for="inputTel"></label>
+                        <input type="tel" id="inputTel" placeholder="Телефон*" tabindex="4"
+                               pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$" required/>
+                    </fieldset>
+                    <button type="submit" id="inputSubmit" data-loading-text="Отправляется"
+                            class="btn btn-default-lg">Отправить
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"
+        integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ=="
+        crossorigin="anonymous"></script>
+<script src="http://maps.api.2gis.ru/2.0/loader.js?pkg=full"></script>
+<!--<script src="js/main.js"></script>-->
+<script type="text/javascript">
+    var map;
+
+    DG.then(function (){
+        map = DG.map('map', {
+            center: [59.935764, 30.32583],
+            zoom: 16,
+            scrollWheelZoom: false
+        });
+        DG.control.location({position: 'bottomright'}).addTo(map);
+        DG.control.traffic().addTo(map);
+        DG.marker([59.935764, 30.32583]).addTo(map).bindPopup('Невский проспект, 28, Санкт-Петербург, Россия');
+    });
+
+    $(function (){
+        $('.button-wrapper-bottom a[href*=#]:not([href=#]), .nav a[href*=#]:not([href=#])').click(function (){
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+
+</script>
+</body>
+</html>
